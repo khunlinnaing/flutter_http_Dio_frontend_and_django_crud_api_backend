@@ -28,3 +28,5 @@ Follow this step-by-step guide to set up the Django server for this project.
 ```bash
 python3 -m venv env
 source env/bin/activate
+pip install django
+pip install -r requirements.txt
