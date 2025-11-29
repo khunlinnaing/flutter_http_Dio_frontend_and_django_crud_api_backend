@@ -1,29 +1,27 @@
-# Flutter Clean Architecture Structure
-lib/
-├─ main.dart
-├─ core/
-│  └─ network/
-│     └─ api_client.dart
-├─ data/
-│  ├─ models/
-│  │  └─ user_model.dart
-│  ├─ datasources/
-│  │  └─ user_remote_data_source.dart
-│  └─ repositories/
-│     └─ user_repository_impl.dart
-├─ domain/
-│  ├─ entities/
-│  │  └─ user.dart
-│  ├─ repositories/
-│  │  └─ user_repository.dart
-│  └─ usecases/
-│     ├─ get_users.dart
-│     ├─ create_user.dart
-│     ├─ update_user.dart
-│     └─ delete_user.dart
-├─ presentation/
-│  ├─ providers/
-│  │  └─ user_provider.dart
-│  └─ pages/
-│     ├─ user_list_page.dart
-│     └─ user_form_page.dart
+# Setup Django
+1  python3 -m venv env
+2  source env/bin/active
+3  pip install django
+4  pip install -r requirements.txt
+
+
+# 📌 Flutter CRUD App – Clean Architecture + Django REST API
+
+This repository contains a **Flutter CRUD Application** built using **Clean Architecture**.  
+It includes **two separate implementations**:
+
+---
+
+## 🚀 Project Versions
+
+| Project | Networking | Description |
+|--------|------------|-------------|
+| **project_http** | Flutter `http` package | Simple CRUD + image upload |
+| **project_dio** | Dio client | Advanced CRUD + multipart upload + better error handling |
+
+Both projects communicate with a **Django REST Framework (DRF)** backend.
+
+---
+
+# 🧱 Flutter Clean Architecture Structure
+
