@@ -1,27 +1,30 @@
-# Setup Django
-1  python3 -m venv env
-2  source env/bin/active
-3  pip install django
-4  pip install -r requirements.txt
-
-
 # 📌 Flutter CRUD App – Clean Architecture + Django REST API
 
-This repository contains a **Flutter CRUD Application** built using **Clean Architecture**.  
-It includes **two separate implementations**:
+This repository contains a **Flutter CRUD Application** using **Clean Architecture**, connected to a **Django REST Framework (DRF)** backend.
+
+The project includes two Flutter implementations:
 
 ---
 
 ## 🚀 Project Versions
 
-| Project | Networking | Description |
-|--------|------------|-------------|
-| **project_http** | Flutter `http` package | Simple CRUD + image upload |
-| **project_dio** | Dio client | Advanced CRUD + multipart upload + better error handling |
+| Project Name | Networking Package | Description |
+|--------------|--------------------|-------------|
+| **project_http** | `http` | Basic CRUD + simple image upload |
+| **project_dio** | `dio` | Advanced CRUD + multipart upload + interceptors |
 
-Both projects communicate with a **Django REST Framework (DRF)** backend.
+Both versions work with the same Django backend API.
 
 ---
 
-# 🧱 Flutter Clean Architecture Structure
+# ⚙️ Django Backend Setup (Full Flow)
 
+Follow this step-by-step guide to set up the Django server for this project.
+
+---
+
+## 1️⃣ Create & Activate Virtual Environment
+
+```bash
+python3 -m venv env
+source env/bin/activate
